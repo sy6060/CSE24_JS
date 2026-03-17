@@ -1,0 +1,55 @@
+<!-- <html>
+    <head>
+        <title>Grade Calculator</title>
+        <script src="script.js"></script>
+<body>
+    <h1>Grade Calculator</h1>
+<h3>Enter the number of Subjects</h3>
+<form action="#">
+<input type="number" id="subjects" >
+<button onclick="calulateResult()">Calculate result</button>
+<div id="result"></div>
+
+</form>
+</body>
+</html> -->
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Student Result Calculator</title>
+  <!-- <link rel="stylesheet" href="styles.css" /> -->
+  <!-- <style>
+    body { font-family: Arial, sans-serif; background:#f6f8fb; color:#222; padding:24px; }
+    .card { max-width:520px; margin:40px auto; background:#fff; border-radius:8px; box-shadow:0 6px 18px rgba(20,30,60,0.08); padding:20px; }
+    h1 { margin:0 0 12px; font-size:20px; }
+    label { display:block; margin:12px 0 6px; font-weight:600; }
+    input[type="number"] { width:100%; padding:10px; font-size:16px; border:1px solid #d7dbe0; border-radius:6px; box-sizing:border-box; }
+    button { margin-top:12px; padding:10px 14px; font-size:16px; border:none; border-radius:6px; cursor:pointer; background:#2563eb; color:#fff; }
+    .result { margin-top:18px; padding:14px; border-radius:6px; background:#f1f5ff; border:1px solid #dbeafe; }
+    .muted { color:#6b7280; font-size:14px; }
+    ul { padding-left:18px; margin:8px 0; }
+  </style> -->
+</head>
+<body>
+  <div class="card" role="region" aria-label="Student Result Calculator">
+    <h1>Student Result Calculator</h1>
+
+    <label for="numSubjects">Enter Number of Subjects</label>
+    <input id="numSubjects" type="number" min="1" value="3" aria-describedby="numHelp" />
+
+    <div id="numHelp" class="muted">Set how many subjects you want to enter marks for.</div>
+
+    <button id="calcBtn" type="button">Calculate Result</button>
+
+    <div id="output" class="result" hidden aria-live="polite">
+      <div id="summary"></div>
+      <div id="details" class="muted"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
