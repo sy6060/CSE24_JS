@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f3f3f3;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #131921;
+  color: white;
+  padding: 10px 20px;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.search-bar input {
+  padding: 5px;
+  width: 250px;
+}
+
+.search-bar button {
+  padding: 6px 10px;
+  background-color: #febd69;
+  border: none;
+  cursor: pointer;
+}
+
+.location, .cart {
+  margin-left: 20px;
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #232f3e;
+  padding: 10px;
+}
+
+.categories a {
+  color: white;
+  margin-right: 15px;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+.hero {
+  text-align: center;
+  padding: 40px;
+  background-color: #ffccd5;
+}
+
+.promo-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  padding: 20px;
+}
+
+.promo-card {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.promo-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
